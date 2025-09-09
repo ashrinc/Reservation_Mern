@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { data } from "../restApi.json";
-import { Link } from "react-scroll";
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-scroll";
+import { data } from "../restApi.json";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
     <>
       <nav>
-        <div className="logo">ZEESH</div>
+        <div className="logo">ASHRINCSS</div>
         <div className={show ? "navLinks showmenu" : "navLinks"}>
           <div className="links">
             {data[0].navbarLinks.map((element) => (
